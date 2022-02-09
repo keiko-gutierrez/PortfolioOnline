@@ -11,7 +11,9 @@
     "dev:client": "webpack --watch --config client/webpack.config.js",
     "dev:server": "nodemon --watch server",
     "knex": "knex --knexfile server/db/knexfile.js",
-    "lint": "eslint --ext .js,.jsx ."
+    "lint": "eslint --ext .js,.jsx .",
+    "gen:theme-typings": "chakra-cli tokens <path/to/your/theme.(js|ts)>",
+    "postinstall": "npm run gen:theme-typings"
   },
   "babel": {
     "presets": [
@@ -37,6 +39,7 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
+    "@chakra-ui/cli": "^1.8.1",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
@@ -57,8 +60,18 @@
   },
   "dependencies": {
     "@babel/register": "^7.12.10",
+    "@chakra-ui/cli": "^1.1.0",
+    "@chakra-ui/react": "^1.8.3",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@reduxjs/toolkit": "^1.7.2",
     "@vscode/sqlite3": "^5.0.7",
     "express": "^4.17.1",
-    "knex": "^1.0.1"
+    "framer-motion": "^5.6.0",
+    "knex": "^1.0.1",
+    "lint": "^0.7.0",
+    "react-router-dom": "^6.2.1",
+    "redux": "^4.1.2",
+    "sass": "^1.49.7"
   }
 }

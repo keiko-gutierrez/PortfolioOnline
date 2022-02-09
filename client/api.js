@@ -1,9 +1,9 @@
 import request from 'superagent'
 
-const widgetUrl = '/api/v1/widgets/'
+const portfolioUrl = '/api/v1/portfolio/'
 
-export function getWidgets () {
+export function getPortfolio () {
   return request
-    .get(widgetUrl)
+    .get(portfolioUrl)
     .then(response => response.body)
 }

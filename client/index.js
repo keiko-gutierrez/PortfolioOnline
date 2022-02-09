@@ -1,11 +1,17 @@
 import React from 'react'
-import { render } from 'react-dom'
+import ReactDOM from 'react-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
+// import { ChakraProvider } from '@chakra-ui/react'
 
 import App from './components/App'
 
 document.addEventListener('DOMContentLoaded', () => {
-  render(
-    <App />,
+  ReactDOM.render(
+    //   <ChakraProvider>
+    <Router>
+      <App />
+    </Router>,
+    //  </ChakraProvider>,
     document.getElementById('app')
   )
 })
