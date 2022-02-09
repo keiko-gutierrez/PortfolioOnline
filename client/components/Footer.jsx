@@ -1,4 +1,8 @@
 import React from 'react'
+import {
+  Box,
+  Center
+} from '@chakra-ui/react'
 
 function Footer (props) {
   const copyright = '2022 KeikoGTZ'
@@ -6,8 +10,12 @@ function Footer (props) {
 
   return (
     <div className='footer'>
-      <div>&copy; {copyright}</div>
-      <div>{developer}</div>
+      <Box bg='purple.200'>
+        <Center>
+          <div>&copy; {copyright}</div>
+          <div>{developer}</div>
+        </Center>
+      </Box>
     </div>
   )
 }

@@ -1,13 +1,10 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
-import NaviBar from '../components/NaviBar'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import {
+  useParams
+  // Link
+} from 'react-router-dom'
+import {} from '@chakra-ui/react'
 import data from '../fauxDb.js'
-console.log(data)
-
-// linter happy
-// console.log(NaviBar, Header, Footer)
 
 function Portfolio () {
   const { id } = useParams()

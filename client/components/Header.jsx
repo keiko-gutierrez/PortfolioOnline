@@ -1,18 +1,27 @@
 import React from 'react'
+import {
+  Box,
+  Center
+} from '@chakra-ui/react'
+// import data from '../fauxDb.js'
 
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 function Header () {
   return (
-    <div className='header'>
-      <h1 className='brand-title'>{name}Portfolio</h1>
-      <nav className='nav'>
-        <ul className='nav-list'>
-          <li className='nav-item'>
-            {/*             <Link to='/' className='pure-button'>Home</Link>
-            <Link to='/' className='pure-button'>About</Link>
-            <Link to='/' className='pure-button'>Portfolio</Link>
-            <Link to='/' className='pure-button'>Contact</Link>
+    <div >
+      <Box bg='purple.200'>
+        <Center>
+          <h1 >Keikos Portfolio</h1>
+        </Center>
+      </Box>
+      <nav >
+        <ul >
+          <li >
+            {/*             <Link to='/' cHome</Link>
+            <Link to='/' >About</Link>
+            <Link to='/' >Portfolio</Link>
+            <Link to='/' >Contact</Link>
  */}          </li>
         </ul>
       </nav>

@@ -1,17 +1,21 @@
-import React, { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
-import NaviBar from '../components/NaviBar'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-
-// linter happy
-// console.log(NaviBar, Header, Footer)
-// console.log(useEffect, useState, useParams)
+import React from 'react'
+// import { Link } from 'react-router-dom'
+import {
+  Box,
+  Center
+} from '@chakra-ui/react'
+// import data from '../fauxDb.js'
 
 function About () {
   return (
     <div>
-      <h1>Portfolio</h1>
+      <Box bg='orange.50' textColour='purrple.200'>
+        <Center>
+          this i where i can write about y back grou and my hobbies
+          maybe have a mini blog
+          <div><image href='../blog-pics/babyYoda.jpg' /></div>
+        </Center>
+      </Box>
     </div>
   )
 }
